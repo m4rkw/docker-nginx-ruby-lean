@@ -7,6 +7,9 @@ RUN apt-get update
 RUN apt-get install -yq --no-install-recommends nginx
 RUN apt-get install -yq --no-install-recommends ruby2.2 ruby2.2-dev ruby-passenger ruby-dev ruby-json ruby-net-http-persistent rake
 
+RUN gem install rack-slashenforce
+RUN gem install erubis
+
 RUN useradd -m lean
 
 ADD assets /
