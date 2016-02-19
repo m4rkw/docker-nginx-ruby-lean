@@ -7,4 +7,4 @@ gem install lean*.gem
 cd ..
 rm -rf lean
 
-/var/www/lean/run.sh
+RACK_ENV=production sudo -E -u lean /var/www/lean/run.sh
